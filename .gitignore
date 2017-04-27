@@ -3,3 +3,16 @@
 ################################################################################
 
 /.vs/Tabletennis.Core/v15
+/visual studio 2017
+/Tabletennis.Demo.MatchValidation/bin/Debug
+/Tabletennis.Demo.MatchValidation/obj/Debug
+/Tabletennis.Core.Tests/obj/Debug
+/Tabletennis.Core.Tests/bin/Debug
+/Tabletennis.Core.Services/obj/Debug
+/Tabletennis.Core.Services/bin/Debug
+/Tabletennis.Core.Domain/obj/Debug
+/Tabletennis.Core.Domain/bin/Debug
+/Tabletennis.Core.Contracts/obj/Debug
+/Tabletennis.Core.Contracts/bin/Debug
+/Tabeltennis.Core.Repositories/obj/Debug
+/Tabeltennis.Core.Repositories/bin/Debug

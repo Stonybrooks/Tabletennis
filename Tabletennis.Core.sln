@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Core.Services", "Tabletennis.Core.Services\Tabletennis.Core.Services.csproj", "{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Core.Domain", "Tabletennis.Core.Domain\Tabletennis.Core.Domain.csproj", "{B9E09225-5A58-4806-B70F-7C0DC675DE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tableltennis.Core.Repositories", "Tabeltennis.Core.Repositories\Tableltennis.Core.Repositories.csproj", "{746DA514-805F-4C46-8DA5-6375D57F8BB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Core.Contracts", "Tabletennis.Core.Contracts\Tabletennis.Core.Contracts.csproj", "{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Core.Tests", "Tabletennis.Core.Tests\Tabletennis.Core.Tests.csproj", "{B1597625-13F2-4858-82AB-03D2FAD8085F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Demo.MatchValidation", "Tabletennis.Demo.MatchValidation\Tabletennis.Demo.MatchValidation.csproj", "{DE01F770-48A3-489F-B886-B49C8A52A36F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9E09225-5A58-4806-B70F-7C0DC675DE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9E09225-5A58-4806-B70F-7C0DC675DE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9E09225-5A58-4806-B70F-7C0DC675DE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9E09225-5A58-4806-B70F-7C0DC675DE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{746DA514-805F-4C46-8DA5-6375D57F8BB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746DA514-805F-4C46-8DA5-6375D57F8BB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746DA514-805F-4C46-8DA5-6375D57F8BB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746DA514-805F-4C46-8DA5-6375D57F8BB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1597625-13F2-4858-82AB-03D2FAD8085F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1597625-13F2-4858-82AB-03D2FAD8085F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1597625-13F2-4858-82AB-03D2FAD8085F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1597625-13F2-4858-82AB-03D2FAD8085F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
