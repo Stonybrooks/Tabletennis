@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Domain;
-using Tabletennis.Core.Services.MatchValidation;
+using Tabletennis.Demo.MatchValidation.Services;
 using Tabletennis.Demo.MatchValidation.SetRules;
 
 namespace Tabletennis.Core.Tests.Services
