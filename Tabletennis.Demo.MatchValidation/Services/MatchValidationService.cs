@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Tabletennis.Core.Contracts;
+using Tabletennis.Core.Contracts.MatchValidation;
 using Tabletennis.Core.Domain;
 using Tabletennis.Demo.MatchValidation.SetRules;
 

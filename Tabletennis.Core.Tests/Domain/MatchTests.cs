@@ -9,7 +9,9 @@ namespace Tabletennis.Core.Tests.Domain
         [TestMethod]
         public void CreateMatch__does_not_throw_error()
         {
-            var match = new Match();        
+            var match = new Match();  
+            
+            Assert.IsNotNull(match);
         }
 
         [TestMethod]

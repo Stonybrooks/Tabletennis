@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Tabletennis.Core.Domain;
 
-namespace Tabletennis.Core.Contracts
+namespace Tabletennis.Core.Contracts.MatchValidation
 {
     public interface IMatchValidationService
     {

@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMatchValidationService.cs" />
+    <Compile Include="MatchValidation\IMatchValidationService.cs" />
     <Compile Include="IPlayer.cs" />
-    <Compile Include="ISetRule.cs" />
+    <Compile Include="MatchValidation\ISetRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
