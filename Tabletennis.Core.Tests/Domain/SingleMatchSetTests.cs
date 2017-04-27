@@ -4,7 +4,7 @@ using Tabletennis.Core.Domain;
 namespace Tabletennis.Core.Tests.Domain
 {
     [TestClass]
-    public class MatchSetTests
+    public class SingleMatchSetTests
     {
         [TestMethod]
         public void CreateSet__setscore_1_and_2_equals_zero()
@@ -19,7 +19,9 @@ namespace Tabletennis.Core.Tests.Domain
         [TestMethod]
         public void AddSetToMatch__set_property_contains_one_item_after_add()
         {
-            var match = new Match();
+            // TODO: decide if this test makes any sence to have. It only tests the .net List<T> doesn't it?
+
+            Match match = new SingleMatch();
 
             match.Sets.Add(new Set());
 

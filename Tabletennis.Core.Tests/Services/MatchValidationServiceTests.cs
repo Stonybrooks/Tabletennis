@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Contracts.MatchValidation;
 using Tabletennis.Core.Domain;
 using Tabletennis.Demo.MatchValidation.Services;
@@ -29,7 +28,7 @@ namespace Tabletennis.Core.Tests.Services
         {
             var sut = new MatchValidationService();
 
-            var matchValidationOutput = sut.ValidateMatch(new Match());
+            var matchValidationOutput = sut.ValidateMatch(new SingleMatch());
 
             Assert.IsNotNull(matchValidationOutput);
         }
@@ -45,7 +44,7 @@ namespace Tabletennis.Core.Tests.Services
                 }
             };
 
-            var match = new Match();
+            var match = new SingleMatch();
             match.Sets.Add(new Set());
 
 
@@ -65,7 +64,7 @@ namespace Tabletennis.Core.Tests.Services
                 }
             };
 
-            var match = new Match();
+            var match = new SingleMatch();
             match.Sets.Add(new Set{Score1 = 8, Score2 = 7});
 
 
@@ -85,7 +84,7 @@ namespace Tabletennis.Core.Tests.Services
                 }
             };
 
-            var match = new Match();
+            var match = new SingleMatch();
             match.Sets.Add(new Set { Score1 = 9, Score2 = 7 });
 
 
@@ -105,7 +104,7 @@ namespace Tabletennis.Core.Tests.Services
                 }
             };
 
-            var match = new Match();
+            var match = new SingleMatch();
             match.Sets.Add(new Set { Score1 = 9, Score2 = 7 });
 
 
@@ -125,7 +124,7 @@ namespace Tabletennis.Core.Tests.Services
                 }
             };
 
-            var match = new Match();
+            var match = new SingleMatch();
             match.Sets.Add(new Set { Score1 = 12, Score2 = 10 });
 
 

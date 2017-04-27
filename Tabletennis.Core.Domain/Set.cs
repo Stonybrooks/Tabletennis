@@ -1,6 +1,9 @@
-﻿namespace Tabletennis.Core.Domain
+﻿using Tabletennis.Core.Contracts;
+using Tabletennis.Core.Contracts.MatchValidation;
+
+namespace Tabletennis.Core.Domain
 {
-    public class Set
+    public class Set : ISet
     {
         private uint _score1;
 

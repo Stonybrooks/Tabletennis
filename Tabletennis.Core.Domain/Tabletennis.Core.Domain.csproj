@@ -40,10 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoubleMatch.cs" />
     <Compile Include="Match.cs" />
-    <Compile Include="MatchValidationResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Set.cs" />
+    <Compile Include="SingleMatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tabletennis.Core.Contracts\Tabletennis.Core.Contracts.csproj">
+      <Project>{AFE303C7-A085-4F5C-B6C2-3B2E6322574A}</Project>
+      <Name>Tabletennis.Core.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

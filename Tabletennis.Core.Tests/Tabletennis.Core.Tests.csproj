@@ -48,9 +48,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Domain\MatchTests.cs" />
+    <Compile Include="Domain\SingleMatchSetTests.cs" />
+    <Compile Include="Domain\SingleMatchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Domain\MatchSetTests.cs" />
     <Compile Include="Services\MatchValidationServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>

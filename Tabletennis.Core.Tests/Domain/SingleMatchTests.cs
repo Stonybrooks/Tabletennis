@@ -4,12 +4,12 @@ using Tabletennis.Core.Domain;
 namespace Tabletennis.Core.Tests.Domain
 {
     [TestClass]
-    public class MatchTests
+    public class SingleMatchTests
     {
         [TestMethod]
         public void CreateMatch__does_not_throw_error()
         {
-            var match = new Match();  
+            Match match = new SingleMatch();  
             
             Assert.IsNotNull(match);
         }
@@ -17,7 +17,7 @@ namespace Tabletennis.Core.Tests.Domain
         [TestMethod]
         public void CreateMatch__Match_Set_property_is_not_null()
         {
-            var match = new Match();
+            var match = new SingleMatch();
 
             Assert.IsNotNull(match.Sets);
         }

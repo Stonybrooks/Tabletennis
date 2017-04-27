@@ -40,16 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMatch.cs" />
+    <Compile Include="MatchValidation\IMatchValidationOutput.cs" />
     <Compile Include="MatchValidation\IMatchValidationService.cs" />
     <Compile Include="IPlayer.cs" />
+    <Compile Include="ISet.cs" />
     <Compile Include="MatchValidation\ISetRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tabletennis.Core.Domain\Tabletennis.Core.Domain.csproj">
-      <Project>{B9E09225-5A58-4806-B70F-7C0DC675DE9B}</Project>
-      <Name>Tabletennis.Core.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

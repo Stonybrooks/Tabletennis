@@ -7,7 +7,7 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 {
     public class OneScoreEqualsElevenOrAboveSetRule : ISetRule
     {
-        public bool Execute(Set set)
+        public bool Execute(ISet set)
         {
             if (set == null) { throw new ArgumentNullException(nameof(set)); }
 

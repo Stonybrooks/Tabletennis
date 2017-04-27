@@ -1,14 +1,20 @@
 ﻿using System.Collections.Generic;
+using Tabletennis.Core.Contracts;
+using Tabletennis.Core.Contracts.MatchValidation;
 
 namespace Tabletennis.Core.Domain
-{
-    public class Match
+{  
+    public abstract class Match : IMatch
     {
-        public List<Set> Sets { get; set; }
+        public List<ISet> Sets { get; set; }
 
-        public Match()
+        #region constructor(s)
+
+        protected Match()
         {
-            Sets = new List<Set>();
+            Sets = new List<ISet>();
         }
+
+        #endregion
     }
 }
