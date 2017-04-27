@@ -38,21 +38,25 @@ namespace Tabletennis.Core.Services.MatchValidation
         {
             if (match == null) { throw new ArgumentNullException(nameof(match)); }
 
-            var output = new MatchValidationOutput();
+            var validationOutput = new MatchValidationOutput();
+
+            #region Set validation
 
             var matchSetsValidationResults = ValidateSets(match.Sets);
 
             if (matchSetsValidationResults.Any(s => !s.IsValid))
             {
-                output.Result = MatchValidationResult.Invalid;
-                output.ValidationInformation = "Match contains invalid set.";
+                validationOutput.Result = MatchValidationResult.Invalid;
+                validationOutput.ValidationInformation = "Match contains invalid set.";
             }
             else
             {
-                output.Result = MatchValidationResult.Valid;
+                validationOutput.Result = MatchValidationResult.Valid;
             }
 
-            return output;
+            #endregion
+
+            return validationOutput;
         }
 
         #endregion
@@ -61,14 +65,15 @@ namespace Tabletennis.Core.Services.MatchValidation
 
         private List<SetValidationResult> ValidateSets(List<Set> sets)
         {
-           
-            
+            // INFO: Argument parameter name is changed because this is a private method. So this name gives more transparence to the caller of 'ValidateMatch(Match match)'
+            // ReSharper disable once NotResolvedInText
+            if (sets == null) { throw new ArgumentNullException("match.Sets"); }
 
-            if (sets == null) { throw new ArgumentNullException(nameof(sets)); }
+            // INFO: Argument parameter name is changed because this is a private method. So this name gives more transparence to the caller of 'ValidateMatch(Match match)'
             // ReSharper disable once NotResolvedInText
             if (sets.Count == 0) { throw new ArgumentException("Value cannot be an empty collection.", "match.Sets"); }
 
-            List<SetValidationResult> validationResults = new List<SetValidationResult>();
+            var validationResults = new List<SetValidationResult>();
 
             foreach (var set in sets)
             {
@@ -93,7 +98,7 @@ namespace Tabletennis.Core.Services.MatchValidation
         {
             if (set == null) { throw new ArgumentNullException(nameof(set)); }
 
-            SetValidationResult validationResult = new SetValidationResult{ IsValid = true };
+            var validationResult = new SetValidationResult{ IsValid = true };
 
             foreach (var setRule in SetRules)
             {
@@ -101,6 +106,7 @@ namespace Tabletennis.Core.Services.MatchValidation
                 
                 if (!parsedSetRuleValidation)
                 {
+                    // if the set failes to parse one rule, we set IsValid to 'false', and break out of the foreach loop 
                     validationResult.IsValid = false;
 
                     break;
