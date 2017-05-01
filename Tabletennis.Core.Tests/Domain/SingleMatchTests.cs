@@ -1,5 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Tabletennis.Core.Domain;
 using Tabletennis.Demo.Domain;
 
 namespace Tabletennis.Core.Tests.Domain

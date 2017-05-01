@@ -1,6 +1,6 @@
 ﻿using Tabletennis.Core.Contracts;
 
-namespace Tabletennis.Core.Domain
+namespace Tabletennis.Demo.Domain
 {
     public class Set : ISet
     {

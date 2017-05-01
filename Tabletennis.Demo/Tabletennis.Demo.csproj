@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Domain\DoubleMatch.cs" />
+    <Compile Include="Domain\Match.cs" />
+    <Compile Include="Domain\Set.cs" />
     <Compile Include="Domain\SingleMatch.cs" />
     <Compile Include="MatchValidation\Services\MatchValidationResult.cs" />
     <Compile Include="MatchValidation\Services\MatchValidationService.cs" />

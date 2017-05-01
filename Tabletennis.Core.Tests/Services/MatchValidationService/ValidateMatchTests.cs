@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tabletennis.Core.Contracts.MatchValidation;
-using Tabletennis.Core.Domain;
 using Tabletennis.Demo.Domain;
 using Tabletennis.Demo.MatchValidation.SetRules;
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Tabletennis.Core.Contracts;
 
-namespace Tabletennis.Core.Domain
+namespace Tabletennis.Demo.Domain
 {  
     public abstract class Match : IMatch
     {

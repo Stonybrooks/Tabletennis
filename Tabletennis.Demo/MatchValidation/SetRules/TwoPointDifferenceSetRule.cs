@@ -1,7 +1,6 @@
 ﻿using System;
 using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Contracts.MatchValidation;
-using Tabletennis.Core.Domain;
 
 namespace Tabletennis.Demo.MatchValidation.SetRules
 {

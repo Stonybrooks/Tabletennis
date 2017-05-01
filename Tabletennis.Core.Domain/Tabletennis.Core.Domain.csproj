@@ -40,9 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Match.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Set.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tabletennis.Core.Contracts\Tabletennis.Core.Contracts.csproj">
