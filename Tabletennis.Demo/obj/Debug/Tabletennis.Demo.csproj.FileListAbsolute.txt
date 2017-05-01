@@ -1,0 +1,9 @@
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Demo.dll
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Demo.pdb
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Core.Contracts.dll
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Core.Domain.dll
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Core.Contracts.pdb
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\bin\Debug\Tabletennis.Core.Domain.pdb
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\obj\Debug\Tabletennis.Demo.csprojResolveAssemblyReference.cache
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\obj\Debug\Tabletennis.Demo.dll
+C:\Git\Chst\Tabletennis.Core\Tabletennis.Demo\obj\Debug\Tabletennis.Demo.pdb

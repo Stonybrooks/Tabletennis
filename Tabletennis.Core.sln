@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Core.Tests", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Demo.MatchValidation", "Tabletennis.Demo.MatchValidation\Tabletennis.Demo.MatchValidation.csproj", "{DE01F770-48A3-489F-B886-B49C8A52A36F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabletennis.Demo", "Tabletennis.Demo\Tabletennis.Demo.csproj", "{5EE19901-DC89-4A57-B0E3-87D65AB26CD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE01F770-48A3-489F-B886-B49C8A52A36F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE19901-DC89-4A57-B0E3-87D65AB26CD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE19901-DC89-4A57-B0E3-87D65AB26CD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE19901-DC89-4A57-B0E3-87D65AB26CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE19901-DC89-4A57-B0E3-87D65AB26CD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

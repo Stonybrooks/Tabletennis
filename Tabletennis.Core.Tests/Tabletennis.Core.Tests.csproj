@@ -52,6 +52,7 @@
     <Compile Include="Domain\SingleMatchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\MatchValidationService\ValidateMatchTests.cs" />
+    <Compile Include="UnitTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -69,9 +70,9 @@
       <Project>{85AF0A8D-12B6-4C5C-BCD5-1E2BB17E9271}</Project>
       <Name>Tabletennis.Core.Services</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tabletennis.Demo.MatchValidation\Tabletennis.Demo.MatchValidation.csproj">
-      <Project>{DE01F770-48A3-489F-B886-B49C8A52A36F}</Project>
-      <Name>Tabletennis.Demo.MatchValidation</Name>
+    <ProjectReference Include="..\Tabletennis.Demo\Tabletennis.Demo.csproj">
+      <Project>{5ee19901-dc89-4a57-b0e3-87d65ab26cd9}</Project>
+      <Name>Tabletennis.Demo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
