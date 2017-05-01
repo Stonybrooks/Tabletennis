@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Contracts.MatchValidation;
 
@@ -14,8 +10,8 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
         {
             if (set == null) { throw new ArgumentNullException(nameof(set)); }
 
-            uint highestScore = 0;
-            uint lowestScore = 0;
+            uint highestScore;
+            uint lowestScore;
 
             if (set.Score1 > set.Score2)
             {
@@ -30,7 +26,7 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 
             if (highestScore > 11 && lowestScore < 9)
             {
-                
+                return false;
             }
 
             return true;
@@ -38,7 +34,7 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 
         public override string ToString()
         {
-            return "HigherThanElevenSetRule";
+            return "HigherThanElevenOtherScoreMustBeNineOrAboveSetRule";
         }
     }
 }
