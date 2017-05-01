@@ -7,8 +7,8 @@
     <ProjectGuid>{746DA514-805F-4C46-8DA5-6375D57F8BB4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tableltennis.Core.Repositories</RootNamespace>
-    <AssemblyName>Tableltennis.Core.Repositories</AssemblyName>
+    <RootNamespace>Tabletennis.Core.Repositories</RootNamespace>
+    <AssemblyName>Tabletennis.Core.Repositories</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

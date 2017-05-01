@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Tabeltennis.Core.Repositories")]
+[assembly: AssemblyTitle("Tabletennis.Core.Repositories")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Lærerstandens Brandforsikring")]
-[assembly: AssemblyProduct("Tabeltennis.Core.Repositories")]
-[assembly: AssemblyCopyright("Copyright © Lærerstandens Brandforsikring 2017")]
+[assembly: AssemblyCompany("Christian Stenfors")]
+[assembly: AssemblyProduct("Tabletennis.Core.Repositories")]
+[assembly: AssemblyCopyright("Copyright © Christian Stenfors 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
