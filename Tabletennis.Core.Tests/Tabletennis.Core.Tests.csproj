@@ -51,7 +51,7 @@
     <Compile Include="Domain\SingleMatchSetTests.cs" />
     <Compile Include="Domain\SingleMatchTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\MatchValidationService\MatchValidationServiceTests.cs" />
+    <Compile Include="Services\MatchValidationService\ValidateMatchTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
