@@ -51,10 +51,6 @@
       <Project>{B9E09225-5A58-4806-B70F-7C0DC675DE9B}</Project>
       <Name>Tabletennis.Core.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Tabletennis.Demo.MatchValidation\Tabletennis.Demo.MatchValidation.csproj">
-      <Project>{DE01F770-48A3-489F-B886-B49C8A52A36F}</Project>
-      <Name>Tabletennis.Demo.MatchValidation</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
