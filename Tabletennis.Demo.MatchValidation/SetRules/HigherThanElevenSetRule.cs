@@ -24,7 +24,7 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
                 lowestScore = set.Score1;
             }
 
-            if (highestScore > 11 && lowestScore < 9)
+            if (highestScore > 11 && lowestScore < 10)
             {
                 return false;
             }

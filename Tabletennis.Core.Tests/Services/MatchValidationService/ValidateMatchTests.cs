@@ -140,7 +140,8 @@ namespace Tabletennis.Core.Tests.Services.MatchValidationService
                 {
                     new OneScoreEqualsElevenOrAboveSetRule(),
                     new TwoPointDifferenceSetRule(),
-                    new PointsAreNotEqualSetRule()
+                    new PointsAreNotEqualSetRule(),
+                    new HigherThanElevenOtherScoreMustBeNineOrAboveSetRule()
                 }
             };
 
