@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tabletennis.Core.Contracts.MatchValidation
+﻿namespace Tabletennis.Core.Contracts.MatchValidation
 {
     public interface IMatchValidationOutput
     {

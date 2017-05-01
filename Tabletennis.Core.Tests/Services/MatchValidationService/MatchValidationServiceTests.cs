@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tabletennis.Core.Contracts.MatchValidation;
 using Tabletennis.Core.Domain;
-using Tabletennis.Demo.MatchValidation.Services;
 using Tabletennis.Demo.MatchValidation.SetRules;
 
-namespace Tabletennis.Core.Tests.Services
+namespace Tabletennis.Core.Tests.Services.MatchValidationService
 {
     [TestClass]
-    public class MatchValidationServiceTests
+    public class ValidateMatchTests
     {
         [ExpectedException(typeof(ArgumentNullException))]
         [TestMethod]
         public void ValidateMatchWithNullInput__throws_exception()
         {
             Match match = null;
-            var sut = new MatchValidationService();
+            var sut = new Demo.MatchValidation.Services.MatchValidationService();
 
             // ReSharper disable once ExpressionIsAlwaysNull
             sut.ValidateMatch(match);
@@ -26,7 +25,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithEmptyListOfSets__throws_exception()
         {
-            var sut = new MatchValidationService();
+            var sut = new Demo.MatchValidation.Services.MatchValidationService();
 
             var matchValidationOutput = sut.ValidateMatch(new SingleMatch());
 
@@ -36,7 +35,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithOneSetOfZeroScores__is_invalid()
         {
-            var sut = new MatchValidationService
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
             {
                 SetRules = new List<ISetRule>
                 {
@@ -56,7 +55,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithOneSetWithScoreDifferenceOfOne__is_invalid()
         {
-            var sut = new MatchValidationService
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
             {
                 SetRules = new List<ISetRule>
                 {
@@ -76,7 +75,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithOneSetWithScoreDifferenceOfTwo__is_valid()
         {
-            var sut = new MatchValidationService
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
             {
                 SetRules = new List<ISetRule>
                 {
@@ -96,7 +95,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithOneSetWithScoresLowerThanEleven__is_invalid()
         {
-            var sut = new MatchValidationService
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
             {
                 SetRules = new List<ISetRule>
                 {
@@ -116,7 +115,7 @@ namespace Tabletennis.Core.Tests.Services
         [TestMethod]
         public void ValidateMatchWithOneSetWithOneScoreHigherThanEleven__is_valid()
         {
-            var sut = new MatchValidationService
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
             {
                 SetRules = new List<ISetRule>
                 {

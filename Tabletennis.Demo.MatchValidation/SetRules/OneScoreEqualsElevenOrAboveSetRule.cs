@@ -13,5 +13,10 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 
             return set.Score1 >= 11 || set.Score2 >= 11;
         }
+
+        public override string ToString()
+        {
+            return "OneScoreEqualsElevenOrAboveSetRule";
+        }
     }
 }

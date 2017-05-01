@@ -13,5 +13,10 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 
             return set.Score1 != set.Score2;
         }
+
+        public override string ToString()
+        {
+            return "PointsAreNotEqualSetRule";
+        }
     }
 }

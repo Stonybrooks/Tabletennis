@@ -7,7 +7,7 @@ namespace Tabletennis.Core.Tests.Domain
     public class SingleMatchTests
     {
         [TestMethod]
-        public void CreateMatch__does_not_throw_error()
+        public void CreateMatchUsingDefaultConstructor__does_not_throw_error()
         {
             Match match = new SingleMatch();  
             

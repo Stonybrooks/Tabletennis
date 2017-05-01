@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Contracts.MatchValidation;
-using Tabletennis.Core.Domain;
 using Tabletennis.Demo.MatchValidation.SetRules;
 
 namespace Tabletennis.Demo.MatchValidation.Services
@@ -26,7 +25,7 @@ namespace Tabletennis.Demo.MatchValidation.Services
 
         public MatchValidationService(List<ISetRule> setRules)
         {
-            if (setRules == null) throw new ArgumentNullException(nameof(setRules));
+            if (setRules == null) { throw new ArgumentNullException(nameof(setRules)); }
 
             SetRules = setRules;
         }
@@ -37,11 +36,11 @@ namespace Tabletennis.Demo.MatchValidation.Services
 
         public IMatchValidationOutput ValidateMatch(IMatch match)
         {
-            if (match == null) throw new ArgumentNullException(nameof(match));
+            if (match == null) { throw new ArgumentNullException(nameof(match)); }
 
             var validationOutput = new MatchValidationOutput();
 
-            #region Set validation
+            #region Execute match set validation
 
             var matchSetsValidationResults = ValidateSets(match.Sets);
 
@@ -84,9 +83,9 @@ namespace Tabletennis.Demo.MatchValidation.Services
 
         private SetValidationResult ValidateSet(ISet set)
         {
-            if (set == null) throw new ArgumentNullException(nameof(set));
+            if (set == null) { throw new ArgumentNullException(nameof(set)); }
 
-            var validationResult = new SetValidationResult {IsValid = true};
+            var validationResult = new SetValidationResult { IsValid = true };
 
             foreach (var setRule in SetRules)
             {

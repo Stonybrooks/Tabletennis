@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Tabletennis.Core.Contracts;
-using Tabletennis.Core.Contracts.MatchValidation;
 
 namespace Tabletennis.Core.Domain
 {  
@@ -8,13 +7,9 @@ namespace Tabletennis.Core.Domain
     {
         public List<ISet> Sets { get; set; }
 
-        #region constructor(s)
-
         protected Match()
         {
             Sets = new List<ISet>();
         }
-
-        #endregion
     }
 }

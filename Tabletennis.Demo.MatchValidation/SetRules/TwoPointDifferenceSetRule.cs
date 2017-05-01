@@ -25,5 +25,10 @@ namespace Tabletennis.Demo.MatchValidation.SetRules
 
             return remaings >= 2;
         }
+
+        public override string ToString()
+        {
+            return "TwoPointDifferenceSetRule";
+        }
     }
 }
