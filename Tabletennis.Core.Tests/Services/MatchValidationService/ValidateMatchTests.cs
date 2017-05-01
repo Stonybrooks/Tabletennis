@@ -64,8 +64,7 @@ namespace Tabletennis.Core.Tests.Services.MatchValidationService
             };
 
             var match = new SingleMatch();
-            match.Sets.Add(new Set{Score1 = 8, Score2 = 7});
-
+            match.Sets.Add(new Set { Score1 = 8, Score2 = 7 });
 
             var matchValidationOutput = sut.ValidateMatch(match);
 
@@ -126,6 +125,29 @@ namespace Tabletennis.Core.Tests.Services.MatchValidationService
             var match = new SingleMatch();
             match.Sets.Add(new Set { Score1 = 12, Score2 = 10 });
 
+
+            var matchValidationOutput = sut.ValidateMatch(match);
+
+            Assert.AreEqual(MatchValidationResult.Valid, matchValidationOutput.Result);
+        }
+
+        [TestMethod]
+        public void ValidateMatchWithScoresThatShouldBeValid__is_valid()
+        {
+            var sut = new Demo.MatchValidation.Services.MatchValidationService
+            {
+                SetRules = new List<ISetRule>
+                {
+                    new OneScoreEqualsElevenOrAboveSetRule(),
+                    new TwoPointDifferenceSetRule(),
+                    new PointsAreNotEqualSetRule()
+                }
+            };
+
+            var match = new SingleMatch();
+            match.Sets.Add(new Set { Score1 = 12, Score2 = 10 });
+            match.Sets.Add(new Set { Score1 = 7, Score2 = 11 });
+            match.Sets.Add(new Set { Score1 = 7, Score2 = 11 });
 
             var matchValidationOutput = sut.ValidateMatch(match);
 

@@ -43,6 +43,7 @@
     <Compile Include="Services\MatchValidationResult.cs" />
     <Compile Include="Services\MatchValidationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetRules\HigherThanElevenSetRule.cs" />
     <Compile Include="SetRules\OneScoreEqualsElevenOrAboveSetRule.cs" />
     <Compile Include="SetRules\PointsAreNotEqualSetRule.cs" />
     <Compile Include="SetRules\TwoPointDifferenceSetRule.cs" />
