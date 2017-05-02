@@ -1,6 +1,6 @@
 ﻿using Tabletennis.Core.Contracts.MatchValidation;
 
-namespace Tabletennis.Demo.MatchValidation.Services
+namespace Tabletennis.Demo.MatchValidation.Service
 {
     public class MatchValidationOutput : IMatchValidationOutput
     {

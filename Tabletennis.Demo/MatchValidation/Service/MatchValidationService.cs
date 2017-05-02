@@ -5,7 +5,7 @@ using Tabletennis.Core.Contracts;
 using Tabletennis.Core.Contracts.MatchValidation;
 using Tabletennis.Demo.MatchValidation.SetRules;
 
-namespace Tabletennis.Demo.MatchValidation.Services
+namespace Tabletennis.Demo.MatchValidation.Service
 {
     public class MatchValidationService : IMatchValidationService
     {
@@ -39,6 +39,12 @@ namespace Tabletennis.Demo.MatchValidation.Services
             if (match == null) { throw new ArgumentNullException(nameof(match)); }
 
             var validationOutput = new MatchValidationOutput();
+
+            #region Execute player related validation
+
+
+
+            #endregion
 
             #region Execute match set validation
 

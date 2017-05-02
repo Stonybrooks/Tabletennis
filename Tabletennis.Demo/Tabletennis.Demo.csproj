@@ -42,11 +42,12 @@
   <ItemGroup>
     <Compile Include="Domain\DoubleMatch.cs" />
     <Compile Include="Domain\Match.cs" />
+    <Compile Include="Domain\Player.cs" />
     <Compile Include="Domain\Set.cs" />
     <Compile Include="Domain\SingleMatch.cs" />
-    <Compile Include="MatchValidation\Services\MatchValidationResult.cs" />
-    <Compile Include="MatchValidation\Services\MatchValidationService.cs" />
-    <Compile Include="MatchValidation\Services\SetValidationResult.cs" />
+    <Compile Include="MatchValidation\Service\MatchValidationResult.cs" />
+    <Compile Include="MatchValidation\Service\MatchValidationService.cs" />
+    <Compile Include="MatchValidation\Service\SetValidationResult.cs" />
     <Compile Include="MatchValidation\SetRules\HigherThanElevenOtherScoreMustBeNineOrAboveSetRule.cs" />
     <Compile Include="MatchValidation\SetRules\OneScoreEqualsElevenOrAboveSetRule.cs" />
     <Compile Include="MatchValidation\SetRules\PointsAreNotEqualSetRule.cs" />

@@ -1,4 +1,4 @@
-﻿namespace Tabletennis.Demo.MatchValidation.Services
+﻿namespace Tabletennis.Demo.MatchValidation.Service
 {
     class SetValidationResult
     {
